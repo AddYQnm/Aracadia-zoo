@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive zoo website</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/habitat.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-paw"></i> Zoo Arcadia</a>
+
+        <nav class="navbar">
+            <a href="#home">Accueil</a>
+            <a href="#about">à Propos</a>
+            <a href="#gallery">Services</a>
+            <a href="#animal">Habitat</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Connexion</a>
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <!-- login form -->
+
+    <form action="" class="login-form">
+
+        <h3>Connexion</h3>
+        
+        <input type="email" placeholder="Enter your email" class="box">
+        <input type="password" placeholder="Enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <a href="#" class="btn">login</a>
+
+    </form>
+
+    </header>
+
+    <section>
+    <div class="main-container">
+        <div class="habitats-container">
+            <div class="habitat" onclick="showDetails('habitat1')">
+                <img src="images/jungle.png" alt="Habitat 1">
+                <div class="habitat-name">Jungle</div>
+            </div>
+            <div class="habitat" onclick="showDetails('habitat2')">
+                <img src="images/savane.png" alt="Habitat 2">
+                <div class="habitat-name">Savane</div>
+            </div>
+            <div class="habitat" onclick="showDetails('habitat3')">
+                <img src="images/marai.png" alt="Habitat 3">
+                <div class="habitat-name">Marais</div>
+            </div>
+        </div>
+        
+        <div id="habitat1" class="habitat-details">
+            <h2>Jungle</h2>
+            <p>L'habitat de la jungle du zoo Arcadia recrée une forêt tropicale dense, abritant des jaguars, des singes et des oiseaux colorés. Les visiteurs y découvrent un environnement verdoyant et immersif.</p>
+            <ul>
+                <li>Lions</li>
+                <li>Elephants</li>
+                <li>Giraffes</li>
+                <li>Zebras</li>
+            </ul>
+            <button class="close-btn" onclick="closeDetails('habitat1')">Close</button>
+        </div>
+
+        <div id="habitat2" class="habitat-details">
+            <h2>Savane</h2>
+            <p>L'habitat de la savane au zoo Arcadia simule les vastes plaines africaines, hébergeant des lions, des girafes et des éléphants. Les visiteurs y observent la faune dans un cadre naturel et ouvert.</p>
+            <ul>
+                <li>Monkeys</li>
+                <li>Toucans</li>
+                <li>Frogs</li>
+                <li>Sloths</li>
+            </ul>
+            <button class="close-btn" onclick="closeDetails('habitat2')">Close</button>
+        </div>
+
+        <div id="habitat3" class="habitat-details">
+            <h2>Marais</h2>
+            <p>L'habitat des marais au zoo Arcadia recrée un environnement humide avec des étangs et des végétations denses. Il abrite des alligators, des tortues et des oiseaux aquatiques.</p>
+            <ul>
+                <li>Camels</li>
+                <li>Meerkats</li>
+                <li>Snakes</li>
+                <li>Lizards</li>
+            </ul>
+            <button class="close-btn" onclick="closeDetails('habitat3')">Close</button>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
